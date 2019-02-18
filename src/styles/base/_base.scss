@@ -12,3 +12,8 @@ button{
 button:disabled{
     cursor: default;
 }
+.is-active{
+    background: $dark-blue;
+    color:white;
+    font-weight: bold;
+}
