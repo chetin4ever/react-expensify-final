@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss'; 
 import 'normalize.css/normalize.css';
-import {BrowserRouter,Route} from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 const ExpenseDashBoardPage = () =>(
     <div> this is epense ExpenseDashBoardPage</div>
@@ -18,15 +18,18 @@ const Help=()=>(
         this is help page
     </div>
 )
+const NotFoundPage=()=>(
+    <div>404!</div>
+)
 const routes=(
     <BrowserRouter>
-        <div>
-            <Route path="/" component={ExpenseDashBoardPage} exact={true}/>
-            <Route path="/create" component={AddExpensePage}/>
-            <Route path="/editExpense" component={EditExpense}/>
-            <Route path="/help" component={Help}/>
-        </div>
-        
+        <Switch>
+            <Route path="/" component={ExpenseDashBoardPage} exact={true} />
+            <Route path="/create" component={AddExpensePage} />
+            <Route path="/editExpense" component={EditExpense} />
+            <Route path="/help" component={Help} />
+            <Route component={NotFoundPage}/>
+        </Switch>
     </BrowserRouter>
 );
 
