@@ -65,6 +65,7 @@
     "babel-plugin-transform-es2015-unicode-regex": "^6.24.1",
     "babel-plugin-transform-exponentiation-operator": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
     "babel-plugin-transform-react-display-name": "^6.25.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-react-jsx-self": "^6.22.0",
