@@ -1,6 +1,8 @@
 import React from 'react';
+import ExpenseList from './ExpenseList';
+
 
 const ExpenseDashBoardPage = () =>(
-    <div> this is epense ExpenseDashBoardPage</div>
+    <div> <ExpenseList/></div>
 )
-export default ExpenseDashBoardPage;
+export default ExpenseDashBoardPage;   

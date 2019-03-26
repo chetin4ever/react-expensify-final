@@ -116,6 +116,7 @@ const filterReducer=(state=filterReducerDefaultState,action)=>{
             return state;
     }
 };
+//Get visible expenses
 const getVisibleExpenses=(expenses,{ text,sortBy,startDate,endDate })=>{
     return expenses.filter((expense)=>{
         console.log('ST:'+startDate);
