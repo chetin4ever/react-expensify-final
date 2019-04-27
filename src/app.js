@@ -6,6 +6,7 @@ import configureStore from './store/configureStore';
 import {addExpense} from './actions/expenses';
 import { setTextFilter} from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
+import 'react-dates/initialize';
 import './styles/styles.scss'; 
 import 'normalize.css/normalize.css';
 
@@ -16,10 +17,10 @@ store.dispatch(addExpense({description:'gas bill', amount:710,createdAt:25000,})
 store.dispatch(addExpense({description:'rent', amount:710,createdAt:27000,}));
 
 
-console.log(store.getState());
+//console.log(store.getState());
 const state=store.getState();
 const visibleExpenses= getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
+//console.log(visibleExpenses);
 
 const jsx=(
     <Provider store={store}>
